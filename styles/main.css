@@ -34,15 +34,15 @@ header h1 {
 }
 
 .hero {
-  background-image: url('../assets/my.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
+  background: radial-gradient(ellipse 75% 60% at center, #3e6779 0%, #355969 30%, rgba(255, 0, 0, 0) 70%);
+  padding: 2rem;
+  border-radius: 1rem;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
+  color: #ddfcff;
 }
 
 .hero h2 {
