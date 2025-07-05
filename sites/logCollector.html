@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bartosz Drągowski | Portfolio</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <script src="../scripts/gallery.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <a href="../index.html">
+                <h1>Bartosz Drągowski</h1>
+            </a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Log Collector</h2>
+        </div>
+    </section>
+  
+    <section id="more_info">
+        <div class="grid-section">
+            <div class="normal-card">
+                <div class="project-details">
+                    <h3>Technologies used</h3>
+                    <p>
+                        Backend: Python with Flask<br>
+                        Frontend: HTML with Jinja, CSS, JavaScript<br>
+                        Contenerisation: Docker<br>
+                        Database: MongoDB
+                    </p>
+                </div>
+            </div>
+
+            <div class="normal-card">
+                <div class="project-details">
+                    <h3>Purpose</h3>
+                    <p>
+                        Application collects and holds log files, and separats found issues, so programmer can close them when they are resolved.<br>
+                        App can be accessed and managed via provided browser GUI or RESTful API.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-section" style="margin-top: 1rem">
+
+            <div class="normal-card">
+  
+                <h2 style="color: #a8f5fc; padding: 1rem;">Additional information</h2>
+                <div class="grid-section">
+                    
+                    <div class="project-details">
+                        <h3>Links</h3>
+                        <p>
+                            <a href="../assets/LogCollector/Log collector – user manual.pdf" class="button-link">Manual (PDF file)</a>
+                            <a href="https://github.com/bortok1/LogCollector" class="button-link" style="margin-left:30px">GitHub project</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="grid-section">
+
+                    <div class="project-details">
+
+                        <h3>Gallery</h3>
+                        <div class="gallery">
+                            <img src="../assets/LogCollector/addLog.png" alt="PythonScripts" onclick="openLightbox(this.src)">
+                            <img src="../assets/LogCollector/issues.png" alt="PythonScripts" onclick="openLightbox(this.src)">
+                            <img src="../assets/LogCollector/logs.png" alt="PythonScripts" onclick="openLightbox(this.src)">
+                            <img src="../assets/LogCollector/singleIssue.png" alt="PythonScripts" onclick="openLightbox(this.src)">
+                        </div>
+
+                        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                            <a href="#" class="close-btn" onclick="closeLightbox(event)">×</a>
+                            <img id="lightbox-img" src="" alt="Expanded View" />
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bartosz Drągowski. All rights reserved.</p> <br>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/bartosz-dragowski/">LinkedIn</a>
+            <a href="https://github.com/bortok1/">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html>
